@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" data-theme='light'>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bangla Law</title>
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Daisy + tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font awosome -->
+    <script src="https://kit.fontawesome.com/d061e6942e.js" crossorigin="anonymous"></script>
+
+    <style>
+        .montserrat {
+            font-family: "Montserrat", serif;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        red_pri: '#9D2032',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="montserrat">
+    <header class="bg-[url('./images/banner.jpg')] h-[100vh] bg-cover">
+        <!-- Navbar -->
+        <nav class="fixed w-full">
+            <div class="relative h-fit">
+                <div class="flex justify-between items-center text-white w-4/5 mx-auto relative z-50">
+                    <!-- Logo + Name -->
+                    <div class="flex justify-center items-center gap-4 mt-3">
+                        <div class="h-20 w-20"><img src="./images/site-logo.png" alt=""></div>
+                        <a href="index.html" class="font-bold ml-auto lg:ml-0">
+                            <p class="inline-block">Bangladesh Law <br> Assosiation</p>
+                        </a>
+                    </div>
+                    <!-- Links -->
+                    <div class="hidden lg:block">
+                        <ul class="flex justify-between items-center gap-8">
+                            <li class="hover:text-red_pri">Home</li>
+                            <li class="hover:text-red_pri">About Us</li>
+                            <li class="hover:text-red_pri">Services</li>
+                            <li class="hover:text-red_pri">Contact</li>
+                            <li class="hover:text-red_pri">Login</li>
+                        </ul>
+                    </div>
+                    <!-- Menubar -->
+                    <div class="drawer-end">
+                        <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
+                        <div class="drawer-content">
+                            <!-- Page content here -->
+                            <label for="my-drawer-4" class="drawer-button"><i class="fa-solid fa-bars"></i></label>
+                        </div>
+                        <div class="drawer-side">
+                            <label for="my-drawer-4" aria-label="close sidebar" class="drawer-overlay"></label>
+                            <ul class="menu bg-base-200 min-h-full w-80 p-4 bg-red-600 text-white">
+                                <!-- Sidebar content here -->
+                                <li class="space-y-20 text-3xl"><a>Home</a></li>
+                                <li class="space-y-20 text-3xl"><a>About Us</a></li>
+                                <li class="space-y-20 text-3xl"><a>Services</a></li>
+                                <li class="space-y-20 text-3xl"><a>Contact</a></li>
+                                <li class="space-y-20 text-3xl"><a>Login</a></li>
+                                <div class="flex gap-8 text-white ml-5 mt-20">
+                                    <i class="fa-brands fa-facebook-f text-2xl"></i>
+                                    <i class="fa-brands fa-whatsapp text-2xl"></i>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="absolute inset-0 bg-black z-2 opacity-60"></div>
+            </div>
+
+        </nav>
+        <!-- Banner -->
+        <section class="w-4/5 mx-auto">
+            <div class=" pb-40 pt-72">
+                <h2 class="font-extrabold text-4xl text-center text-green-800">
+                    We Belive in <br> Quality Service <br> and make difference
+                </h2>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <!-- Sliders -->
+        <section class="bg-[#111111]">
+            <div class="w-4/5 mx-auto bg-black flex gap-8 text-white">
+                <div class="p-10 flex flex-col justify-center items-center gap-4">
+                    <i class="fa-regular fa-calendar-check text-4xl mb-4"></i>
+                    <div class="text-center">
+                        <h1 class="font-bold text-xl mb-3">Book an Appoinment</h1>
+                        <p class="font-semibold text-base">Book an appointment with us.<br>Lets have an one to one
+                            conversation</p>
+                    </div>
+                </div>
+
+                <div class="p-10 flex flex-col justify-center items-center gap-4 bg-[#E52A2B]">
+                    <i class="fa-solid fa-location-dot text-4xl mb-4"></i>
+                    <div class="text-center">
+                        <h1 class="font-bold text-xl mb-3">Visit Our Main Office</h1>
+                        <p class="font-semibold text-base">Book an appointment with us.<br>Lets have an one to one
+                            conversation</p>
+                    </div>
+                </div>
+
+                <div class="p-10 flex flex-col justify-center items-center gap-4">
+                    <i class="fa-regular fa-calendar-check text-4xl mb-4"></i>
+                    <div class="text-center">
+                        <h1 class="font-bold text-xl mb-3">Book an Appoinment</h1>
+                        <p class="font-semibold text-base">Book an appointment with us.<br>Lets have an one to one
+                            conversation</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-[#111111]">
+            <div class="w-4/5 mx-auto py-32">
+                <div class="flex justify-center items-center">
+                    <div class="text-center md:text-left text-white w-3/5">
+                        <h2 class="text-5xl mb-10 font-semibold">Lets take your <span
+                                class="text-red_pri">Business</span>
+                            to Next
+                            Level
+                        </h2>
+                        <p class="text-base font-normal">Our expert team is always there with the best advice for your
+                            business
+                            according to your
+                            need. <br>Let’s have a sit-down, you tell us what do you need and where you want to take
+                            your business and we will tell you what needs to be done. </p>
+                    </div>
+                    <div>
+                        <img src="./images/tea.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div
+                class="relative h-[80vh] flex items-center justify-center bg-cover bg-center bg-[url('./images/bg-about-header.jpg')]">
+                <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+                <div class="relative text-center text-white flex flex-col gap-3">
+                    <p class="text-4xl font-light">A New Idea</p>
+                    <h1 class="text-5xl font-bold">Inspires Us To Make</h1>
+                    <p class="text-4xl font-light">Great Works</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="bg-[#111111] text-white p-10">
+                <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10">
+                    <!-- Left Image -->
+                    <div class="w-full md:w-1/2">
+                        <img src="./images/aboutusPage.jpg" alt="Scales of Justice" class="w-full rounded-lg shadow-lg">
+                    </div>
+
+                    <!-- Right Text Content -->
+                    <div class="w-full md:w-1/2">
+                        <h2 class="text-3xl md:text-4xl font-light">
+                            Lets take your <span class="text-red-500 font-semibold">Business</span> to <br> Next Level
+                        </h2>
+                        <p class="mt-4 text-gray-300 leading-relaxed">
+                            Does your business need to recruit staff from overseas? Our specialist lawyers provide the
+                            full range
+                            of business immigration services, from preparing sponsor licence applications, and work
+                            permits to visa
+                            applications for employees and advice on continuing compliance with the Immigration Rules.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+</body>
+
+</html>
