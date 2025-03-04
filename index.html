@@ -37,13 +37,13 @@
 <body class="montserrat">
     <header class="bg-[url('./images/banner.jpg')] h-[100vh] bg-cover">
         <!-- Navbar -->
-        <nav class="fixed w-full">
+        <nav class="fixed w-full z-50">
             <div class="relative h-fit">
                 <div class="flex justify-between items-center text-white w-4/5 mx-auto relative z-50">
                     <!-- Logo + Name -->
                     <div class="flex justify-center items-center gap-4 mt-3">
                         <div class="h-20 w-20"><img src="./images/site-logo.png" alt=""></div>
-                        <a href="index.html" class="font-bold ml-auto lg:ml-0">
+                        <a href="./index.html" class="font-bold ml-auto lg:ml-0">
                             <p class="inline-block">Bangladesh Law <br> Assosiation</p>
                         </a>
                     </div>
@@ -58,24 +58,25 @@
                         </ul>
                     </div>
                     <!-- Menubar -->
-                    <div class="drawer-end">
+                    <div class="drawer-end ">
                         <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
                         <div class="drawer-content">
                             <!-- Page content here -->
-                            <label for="my-drawer-4" class="drawer-button"><i class="fa-solid fa-bars"></i></label>
+                            <label for="my-drawer-4" class="drawer-button cursor-pointer"><i class="fa-solid fa-bars text-2xl"></i></label>
                         </div>
-                        <div class="drawer-side">
+                        <div class="drawer-side  h-full">
                             <label for="my-drawer-4" aria-label="close sidebar" class="drawer-overlay"></label>
-                            <ul class="menu bg-base-200 min-h-full w-80 p-4 bg-red-600 text-white">
+                            <ul
+                                class="menu bg-base-200 min-h-full w-80 p-4 bg-red-600 text-white relative top-0 right-0 pt-20">
                                 <!-- Sidebar content here -->
-                                <li class="space-y-20 text-3xl"><a>Home</a></li>
+                                <li class="space-y-20 text-3xl"><a href="./index.html">Home</a></li>
                                 <li class="space-y-20 text-3xl"><a>About Us</a></li>
                                 <li class="space-y-20 text-3xl"><a>Services</a></li>
                                 <li class="space-y-20 text-3xl"><a>Contact</a></li>
                                 <li class="space-y-20 text-3xl"><a>Login</a></li>
                                 <div class="flex gap-8 text-white ml-5 mt-20">
-                                    <i class="fa-brands fa-facebook-f text-2xl"></i>
-                                    <i class="fa-brands fa-whatsapp text-2xl"></i>
+                                    <a href=""><i class="fa-brands fa-facebook-f text-2xl hover:bg-red_pri h-10 w-10 p-3 rounded-full flex justify-center items-center"></i></a>
+                                    <a href=""><i class="fa-brands fa-whatsapp text-2xl hover:bg-red_pri h-10 w-10 p-3 rounded-full flex justify-center items-center"></i></a>
                                 </div>
                             </ul>
                         </div>
@@ -96,43 +97,52 @@
     </header>
 
     <main>
-        <!-- Sliders -->
-        <section class="bg-[#111111]">
-            <div class="w-4/5 mx-auto bg-black flex gap-8 text-white">
-                <div class="p-10 flex flex-col justify-center items-center gap-4">
-                    <i class="fa-regular fa-calendar-check text-4xl mb-4"></i>
+
+        <section class="bg-black">
+            <div class="w-4/5 mx-auto flex flex-col md:flex-row text-white py-20 md:py-28 gap-8 md:gap-0">
+                <!-- Book An Appoinment -->
+                <div
+                    class="p-10 flex flex-col justify-start items-center gap-4 bg-[#330000] border rounded-lg border-red-500 border-y-0">
+                    <i class="fa-regular fa-calendar-check text-3xl lg:text-4xl mb-2 lg:mb-4"></i>
                     <div class="text-center">
-                        <h1 class="font-bold text-xl mb-3">Book an Appoinment</h1>
-                        <p class="font-semibold text-base">Book an appointment with us.<br>Lets have an one to one
+                        <h1 class="font-semibold lg:font-bold text-base lg:text-xl mb-3">Book an Appoinment</h1>
+                        <p class="font-light lg:font-semibold text-sm lg:text-base">Book an appointment with us.<br>Lets have an one to one
                             conversation</p>
                     </div>
                 </div>
 
-                <div class="p-10 flex flex-col justify-center items-center gap-4 bg-[#E52A2B]">
-                    <i class="fa-solid fa-location-dot text-4xl mb-4"></i>
+                <!-- Visit Main Office -->
+                <div
+                    class="p-10 flex flex-col justify-start items-center gap-4 bg-[#330000] border rounded-lg border-red-500 border-y-0">
+                    <i class="fa-solid fa-location-dot text-3xl lg:text-4xl mb-2 lg:mb-4"></i>
                     <div class="text-center">
-                        <h1 class="font-bold text-xl mb-3">Visit Our Main Office</h1>
-                        <p class="font-semibold text-base">Book an appointment with us.<br>Lets have an one to one
+                        <h1 class="font-semibold lg:font-bold text-base lg:text-xl mb-3">Visit Our Main Office</h1>
+                        <p class="font-light lg:font-semibold text-sm lg:text-base">Book an appointment with us.<br>Lets have an one to one
                             conversation</p>
                     </div>
                 </div>
 
-                <div class="p-10 flex flex-col justify-center items-center gap-4">
-                    <i class="fa-regular fa-calendar-check text-4xl mb-4"></i>
+                <!-- Book an Appoinment -->
+                <div
+                    class="p-10 flex flex-col justify-start items-center gap-4 bg-[#330000] border rounded-lg border-red-500 border-y-0">
+                    <i class="fa-regular fa-calendar-check text-3xl lg:text-4xl mb-2 lg:mb-4"></i>
                     <div class="text-center">
-                        <h1 class="font-bold text-xl mb-3">Book an Appoinment</h1>
-                        <p class="font-semibold text-base">Book an appointment with us.<br>Lets have an one to one
+                        <h1 class="font-semibold lg:font-bold text-base lg:text-xl mb-3">Book an Appoinment</h1>
+                        <p class="font-light lg:font-semibold text-sm lg:text-base">Book an appointment with us.<br>Lets have an one to one
                             conversation</p>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Business Section -->
+
         <section class="bg-[#111111]">
-            <div class="w-4/5 mx-auto py-32">
-                <div class="flex justify-center items-center">
-                    <div class="text-center md:text-left text-white w-3/5">
-                        <h2 class="text-5xl mb-10 font-semibold">Lets take your <span
+            <div class="w-4/5 mx-auto py-20 md:py-32">
+                <div class="flex justify-center items-center flex-col lg:flex-row">
+                    <!-- Content -->
+                    <div class="text-center lg:text-left text-white lg:w-3/5">
+                        <h2 class="text-3xl md:text-5xl mb-10 font-semibold">Lets take your <span
                                 class="text-red_pri">Business</span>
                             to Next
                             Level
@@ -143,39 +153,45 @@
                             need. <br>Let’s have a sit-down, you tell us what do you need and where you want to take
                             your business and we will tell you what needs to be done. </p>
                     </div>
-                    <div>
+
+                    <!-- Image -->
+                    <div class="flex justify-center items-center w-4/5 lg:w-full pr-20 lg:pr-0">
                         <img src="./images/tea.png" alt="">
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Bg -->
+
         <section>
             <div
                 class="relative h-[80vh] flex items-center justify-center bg-cover bg-center bg-[url('./images/bg-about-header.jpg')]">
                 <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-                <div class="relative text-center text-white flex flex-col gap-3">
+                <div class="z-50 text-center text-white flex flex-col gap-3">
                     <p class="text-4xl font-light">A New Idea</p>
-                    <h1 class="text-5xl font-bold">Inspires Us To Make</h1>
+                    <h1 class="text-4xl lg:text-5xl font-bold">Inspires Us To Make</h1>
                     <p class="text-4xl font-light">Great Works</p>
                 </div>
             </div>
         </section>
 
+        <!-- About Our Company -->
+
         <section>
-            <div class="bg-[#111111] text-white p-10">
-                <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10">
+            <div class="bg-[#111111] text-white py-24">
+                <div class="w-4/5 mx-auto flex flex-col-reverse lg:flex-row items-center gap-10">
                     <!-- Left Image -->
-                    <div class="w-full md:w-1/2">
+                    <div class="w-full lg:w-1/2">
                         <img src="./images/aboutusPage.jpg" alt="Scales of Justice" class="w-full rounded-lg shadow-lg">
                     </div>
 
                     <!-- Right Text Content -->
-                    <div class="w-full md:w-1/2">
-                        <h2 class="text-3xl md:text-4xl font-light">
+                    <div class="w-full lg:w-1/2">
+                        <h2 class="text-3xl md:text-4xl font-light text-center lg:text-left">
                             Lets take your <span class="text-red-500 font-semibold">Business</span> to <br> Next Level
                         </h2>
-                        <p class="mt-4 text-gray-300 leading-relaxed">
+                        <p class="mt-4 text-gray-300 leading-relaxed text-center lg:text-left">
                             Does your business need to recruit staff from overseas? Our specialist lawyers provide the
                             full range
                             of business immigration services, from preparing sponsor licence applications, and work
@@ -187,8 +203,297 @@
             </div>
 
         </section>
+
+        <!-- Our services -->
+
+        <section class="bg-[#330000] text-gray-300 py-20 md:py-28">
+            <div class="w-4/5 mx-auto">
+                <!-- Title -->
+                <div class="py-10 mb-10">
+                    <h2 class="text-center font-thin text-4xl md:text-5xl mb-4">Our Services</h2>
+                    <div class="w-16 h-1 bg-red-500 mx-auto mt-2"></div>
+                </div>
+                <!-- Content -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-0">
+                    <!-- Content-01 -->
+                    <div>
+                        <h2 class="font-normal text-2xl md:text-3xl mb-4">PERSONAL IMMIGRATION</h2>
+                        <div class="space-y-2">
+                            <!-- Expandable Item -->
+                            <details class="group">
+                                <summary
+                                    class="flex items-center w-full text-gray-400 hover:text-gray-200 cursor-pointer">
+                                    <span class="group-open:rotate-90 transition-transform mr-2">►</span>
+                                    British Citizenship Naturalisation
+                                </summary>
+                                <p class="pl-6 mt-1 text-sm text-gray-400">
+                                    You can apply to become a British Citizen through Naturalisation if you meet the
+                                    relevant
+                                    criteria...
+                                    <a href="#" class="text-red-400 hover:underline">Read More</a>
+                                </p>
+                            </details>
+
+                            <details class="group">
+                                <summary
+                                    class="flex items-center w-full text-gray-400 hover:text-gray-200 cursor-pointer">
+                                    <span class="group-open:rotate-90 transition-transform mr-2">►</span>
+                                    British Citizenship Naturalisation
+                                </summary>
+                                <p class="pl-6 mt-1 text-sm text-gray-400">
+                                    You can apply to become a British Citizen through Naturalisation if you meet the
+                                    relevant
+                                    criteria...
+                                    <a href="#" class="text-red-400 hover:underline">Read More</a>
+                                </p>
+                            </details>
+
+                            <details class="group">
+                                <summary
+                                    class="flex items-center w-full text-gray-400 hover:text-gray-200 cursor-pointer">
+                                    <span class="group-open:rotate-90 transition-transform mr-2">►</span>
+                                    British Citizenship Naturalisation
+                                </summary>
+                                <p class="pl-6 mt-1 text-sm text-gray-400">
+                                    You can apply to become a British Citizen through Naturalisation if you meet the
+                                    relevant
+                                    criteria...
+                                    <a href="#" class="text-red-400 hover:underline">Read More</a>
+                                </p>
+                            </details>
+
+                            <details class="group">
+                                <summary
+                                    class="flex items-center w-full text-gray-400 hover:text-gray-200 cursor-pointer">
+                                    <span class="group-open:rotate-90 transition-transform mr-2">►</span>
+                                    British Citizenship Naturalisation
+                                </summary>
+                                <p class="pl-6 mt-1 text-sm text-gray-400">
+                                    You can apply to become a British Citizen through Naturalisation if you meet the
+                                    relevant
+                                    criteria...
+                                    <a href="#" class="text-red-400 hover:underline">Read More</a>
+                                </p>
+                            </details>
+
+                            <details class="group">
+                                <summary
+                                    class="flex items-center w-full text-gray-400 hover:text-gray-200 cursor-pointer">
+                                    <span class="group-open:rotate-90 transition-transform mr-2">►</span>
+                                    British Citizenship Naturalisation
+                                </summary>
+                                <p class="pl-6 mt-1 text-sm text-gray-400">
+                                    You can apply to become a British Citizen through Naturalisation if you meet the
+                                    relevant
+                                    criteria...
+                                    <a href="#" class="text-red-400 hover:underline">Read More</a>
+                                </p>
+                            </details>
+
+                            <details class="group">
+                                <summary
+                                    class="flex items-center w-full text-gray-400 hover:text-gray-200 cursor-pointer">
+                                    <span class="group-open:rotate-90 transition-transform mr-2">►</span>
+                                    British Citizenship Naturalisation
+                                </summary>
+                                <p class="pl-6 mt-1 text-sm text-gray-400">
+                                    You can apply to become a British Citizen through Naturalisation if you meet the
+                                    relevant
+                                    criteria...
+                                    <a href="#" class="text-red-400 hover:underline">Read More</a>
+                                </p>
+                            </details>
+                        </div>
+                    </div>
+
+                    <!-- Content-02 -->
+                    <div>
+                        <h2 class="font-normal text-2xl md:text-3xl mb-4">PERSONAL IMMIGRATION</h2>
+                        <div class="space-y-2">
+                            <!-- Expandable Item -->
+                            <details class="group">
+                                <summary
+                                    class="flex items-center w-full text-gray-400 hover:text-gray-200 cursor-pointer">
+                                    <span class="group-open:rotate-90 transition-transform mr-2">►</span>
+                                    British Citizenship Naturalisation
+                                </summary>
+                                <p class="pl-6 mt-1 text-sm text-gray-400">
+                                    You can apply to become a British Citizen through Naturalisation if you meet the
+                                    relevant
+                                    criteria...
+                                    <a href="#" class="text-red-400 hover:underline">Read More</a>
+                                </p>
+                            </details>
+
+                            <details class="group">
+                                <summary
+                                    class="flex items-center w-full text-gray-400 hover:text-gray-200 cursor-pointer">
+                                    <span class="group-open:rotate-90 transition-transform mr-2">►</span>
+                                    British Citizenship Naturalisation
+                                </summary>
+                                <p class="pl-6 mt-1 text-sm text-gray-400">
+                                    You can apply to become a British Citizen through Naturalisation if you meet the
+                                    relevant
+                                    criteria...
+                                    <a href="#" class="text-red-400 hover:underline">Read More</a>
+                                </p>
+                            </details>
+
+                            <details class="group">
+                                <summary
+                                    class="flex items-center w-full text-gray-400 hover:text-gray-200 cursor-pointer">
+                                    <span class="group-open:rotate-90 transition-transform mr-2">►</span>
+                                    British Citizenship Naturalisation
+                                </summary>
+                                <p class="pl-6 mt-1 text-sm text-gray-400">
+                                    You can apply to become a British Citizen through Naturalisation if you meet the
+                                    relevant
+                                    criteria...
+                                    <a href="#" class="text-red-400 hover:underline">Read More</a>
+                                </p>
+                            </details>
+
+                            <details class="group">
+                                <summary
+                                    class="flex items-center w-full text-gray-400 hover:text-gray-200 cursor-pointer">
+                                    <span class="group-open:rotate-90 transition-transform mr-2">►</span>
+                                    British Citizenship Naturalisation
+                                </summary>
+                                <p class="pl-6 mt-1 text-sm text-gray-400">
+                                    You can apply to become a British Citizen through Naturalisation if you meet the
+                                    relevant
+                                    criteria...
+                                    <a href="#" class="text-red-400 hover:underline">Read More</a>
+                                </p>
+                            </details>
+
+                            <details class="group">
+                                <summary
+                                    class="flex items-center w-full text-gray-400 hover:text-gray-200 cursor-pointer">
+                                    <span class="group-open:rotate-90 transition-transform mr-2">►</span>
+                                    British Citizenship Naturalisation
+                                </summary>
+                                <p class="pl-6 mt-1 text-sm text-gray-400">
+                                    You can apply to become a British Citizen through Naturalisation if you meet the
+                                    relevant
+                                    criteria...
+                                    <a href="#" class="text-red-400 hover:underline">Read More</a>
+                                </p>
+                            </details>
+
+                            <details class="group">
+                                <summary
+                                    class="flex items-center w-full text-gray-400 hover:text-gray-200 cursor-pointer">
+                                    <span class="group-open:rotate-90 transition-transform mr-2">►</span>
+                                    British Citizenship Naturalisation
+                                </summary>
+                                <p class="pl-6 mt-1 text-sm text-gray-400">
+                                    You can apply to become a British Citizen through Naturalisation if you meet the
+                                    relevant
+                                    criteria...
+                                    <a href="#" class="text-red-400 hover:underline">Read More</a>
+                                </p>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Images Section -->
+
+        <section class="bg-[#111111]">
+            <div class="w-4/5 mx-auto py-20 md:py-28">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
+                    <img src="./images/img-01.png" class="w-44 h-40 object-cover bg-cover">
+                    <img src="./images/img-02.jpg" class="w-44 h-44 object-contain bg-cover">
+                    <img src="./images/img-03.jpg" class="w-40 h-32 object-contain bg-cover">
+                    <img src="./images/img-04.jpg" class="w-40 h-32 object-contain bg-cover">
+                </div>
+            </div>
+
+        </section>
     </main>
 
+    <footer class="bg-[#4F0000] text-white">
+        <div class="w-4/5 mx-auto py-16 lg:py-28">
+
+            <!-- Top row: Logo + Contact + Address + Business Hours -->
+            <div class="flex justify-between items-center flex-col md:flex-row gap-10 lg:gap-0">
+
+                <!-- Left Column: Logo & Phone -->
+                <div class="">
+                    <!-- Logo and brand name -->
+                    <div class="flex items-center space-x-2 flex-col h-52 w-52">
+                        <!-- Replace src with your logo image path -->
+                        <img src="./images/footer-logo.png" alt="East West Law Logo" class="h-full w-full" />
+                        <div>
+
+                            <p class="font-semibold inline-block text-base text-center md:text-left"><i class="fa-solid fa-phone pr-2"></i>+44
+                                161 228 4071</p>
+                        </div>
+                    </div>
+
+                    <!-- Social icons (example) -->
+                    <div class="flex space-x-4 mt-4">
+                        <!-- Replace with your own social links/icons -->
+                        <a href="#" aria-label="Facebook" class="hover:opacity-75">
+                            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                                <!-- Facebook icon path -->
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Twitter" class="hover:opacity-75">
+                            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                                <!-- Twitter icon path -->
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Middle Column: Visit our office -->
+                <div class="">
+                    <div class="flex flex-col gap-4 text-center md:text-left">
+                        <h2 class="text-xl font-semibold mb-2">Visit our office-</h2>
+                        <div class="text-sm leading-relaxed text-gray-400">
+                            <p class="mb-4">
+                                <span class="font-semibold">Main Office:</span><br />
+                                First Floor, 390 Stockport Road, <br />
+                                Manchester, M13 0RQ
+                            </p>
+                            <p>
+                                <span class="font-semibold">Branch:</span><br />
+                                1 Guildford Street, <br />
+                                Birmingham, B19 2HN <br />
+                                United Kingdom
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Business Hours -->
+                <div class="text-center md:text-left">
+                    <h2 class="text-xl font-semibold mb-4">Business hours</h2>
+                    <ul class="text-sm leading-relaxed space-y-2 lg:space-y-4">
+                        <li>Monday — 10:00 am – 6:00 pm</li>
+                        <li>Tuesday — 10:00 am – 6:00 pm</li>
+                        <li>Wednesday — 10:00 am – 6:00 pm</li>
+                        <li>Thursday — 10:00 am – 6:00 pm</li>
+                        <li>Friday — 10:00 am – 6:00 pm</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="py-8 bg-black">
+            <!-- "Rights Reserved" Footer Section -->
+            <div class="text-center w-4/5 mx-auto">
+                <p class="text-white text-sm">
+                    All rights reserved by East West Law | OISC registration number F202300542
+                </p>
+            </div>
+
+        </div>
+    </footer>
 </body>
 
 </html>
